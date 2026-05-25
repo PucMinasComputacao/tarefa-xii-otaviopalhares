@@ -8,8 +8,8 @@ IMPORTANTE: Assim como informado anteriormente, capriche na etapa pois você vai
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Otávio Palhares Meira
+- Matricula: 914846
 
 ## Prints do trabalho
 

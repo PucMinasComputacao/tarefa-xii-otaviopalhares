@@ -15,12 +15,12 @@ IMPORTANTE: Assim como informado anteriormente, capriche na etapa pois você vai
 
 << TELA DESKTOP >>
 
-<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png"
+<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png">
 
 << TELA MOBILE >>
 
-<img src="https://github.com/PucMinasComputacao/tarefa-xii-otaviopalhares/blob/main/img/image.png?raw=true"
+<img src="https://github.com/PucMinasComputacao/tarefa-xii-otaviopalhares/blob/main/img/image.png?raw=true">
 
 << TELA CONSOLE >>
 
-<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png"
+<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png">

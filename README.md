@@ -1,4 +1,4 @@
-# Trabalho Prático - Semana 11
+# Trabalho Prático - Semana 12
 
 Nessa etapa, vamos evoluir o trabalho anterior, acrescentando a página de detalhes, conforme o  projeto escolhido. Imagine que a página principal (home-page) mostre um visão dos vários itens que existem no seu site. Ao clicar em um item, você é direcionado pra a página de detalhes. A página de detalhe vai mostrar todas as informações sobre o item do seu projeto. seja esse item uma notícia, filme, receita, lugar turístico ou evento.
 
@@ -13,9 +13,14 @@ IMPORTANTE: Assim como informado anteriormente, capriche na etapa pois você vai
 
 ## Prints do trabalho
 
-<<  COLOQUE A IMAGEM - TELA DE CARDS DE PRODUTOS - AQUI >>
+<< TELA DESKTOP >>
 
-<<  COLOQUE A IMAGEM - TELA DE DETALHE DO PRODUTO - AQUI >>
+<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png"
 
-<<  COLOQUE A IMAGEM - TELA DO CONSOLE - AQUI >>
+<< TELA MOBILE >>
 
+<img src=""
+
+<< TELA CONSOLE >>
+
+<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png"

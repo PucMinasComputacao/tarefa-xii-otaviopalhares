@@ -16,10 +16,16 @@ async function fetchMovies(query = "") {
 
         let url = "";
 
-        if (query) {
+        if (query !== "") {
+
             url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=pt-BR&query=${query}`;
-        } else {
+
+        } 
+
+        else {
+
             url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR`;
+
         }
 
         const response = await fetch(url);
@@ -38,41 +44,45 @@ async function fetchMovies(query = "") {
 
         console.error(error);
 
-        showMessage("Erro ao carregar os filmes.");
+        showMessage("Erro ao carregar filmes.");
 
         return [];
     }
 }
-
 function createMovieCard(movie) {
 
     const card = document.createElement("div");
     card.classList.add("movie-card");
 
-    const poster = movie.poster_path
+    const posterPath = movie.poster_path
         ? `${IMAGE_URL}${movie.poster_path}`
         : "https://via.placeholder.com/500x750?text=Sem+Imagem";
 
     card.innerHTML = `
-        <img src="${poster}" alt="${movie.title}">
+        <img src="${posterPath}" alt="${movie.title}">
 
         <div class="movie-info">
+
             <h2>${movie.title}</h2>
 
-            <p><strong>Lançamento:</strong> 
-            ${movie.release_date || "Não informado"}
-            </p>
-
-            <p><strong>Nota:</strong> 
-            ${movie.vote_average}
+            <p>
+                <strong>Lançamento:</strong>
+                ${movie.release_date || "Não informado"}
             </p>
 
             <p>
-                ${movie.overview
+                <strong>Nota:</strong>
+                ${movie.vote_average}
+            </p>
+
+            <p>
+                ${
+                    movie.overview
                     ? movie.overview.substring(0, 120) + "..."
                     : "Sem descrição."
                 }
             </p>
+
         </div>
     `;
 
@@ -81,22 +91,28 @@ function createMovieCard(movie) {
 
 function renderMovies(movies) {
 
+    // Limpa lista
     movieList.innerHTML = "";
 
     if (movies.length === 0) {
+
         showMessage("Nenhum filme encontrado.");
+
         return;
     }
 
     showMessage("");
 
     movies.forEach(movie => {
+
         const card = createMovieCard(movie);
+
         movieList.appendChild(card);
     });
 }
 
 function showMessage(text) {
+
     message.textContent = text;
 }
 
@@ -114,6 +130,18 @@ btnSearch.addEventListener("click", async () => {
     const movies = await fetchMovies(query);
 
     renderMovies(movies);
+});
+
+searchInput.addEventListener("keypress", async (event) => {
+
+    if (event.key === "Enter") {
+
+        const query = searchInput.value.trim();
+
+        const movies = await fetchMovies(query);
+
+        renderMovies(movies);
+    }
 });
 
 init();

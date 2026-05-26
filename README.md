@@ -19,7 +19,7 @@ IMPORTANTE: Assim como informado anteriormente, capriche na etapa pois você vai
 
 << TELA MOBILE >>
 
-<img src=""
+<img src="https://github.com/PucMinasComputacao/tarefa-xii-otaviopalhares/blob/main/img/image.png?raw=true"
 
 << TELA CONSOLE >>
 

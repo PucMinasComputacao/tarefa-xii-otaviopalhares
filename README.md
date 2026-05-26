@@ -23,4 +23,4 @@ IMPORTANTE: Assim como informado anteriormente, capriche na etapa pois você vai
 
 << TELA CONSOLE >>
 
-<img src="{658BD0EC-6164-401D-8C83-D970A87D7011}.png">
+<img src="https://github.com/PucMinasComputacao/tarefa-xii-otaviopalhares/blob/main/img/%7B658BD0EC-6164-401D-8C83-D970A87D7011%7D.png?raw=true">
